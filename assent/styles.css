@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 0vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+main {
+    width: 75%;
+}
+
+/* -----------------CAROUSEL--------------- */
+.carouselAutoplaying {
+    width: 60vw
+}
+
+.carousel-indicators {
+    opacity: 0.5 !important;
+}
+
+.boton {
+    opacity: 1 !important;
+}
+
+/*--------------Barra header-------------*/
+
+nav {
+    padding: .5rem;
+}
+
+.navbar-brand:hover {
+    cursor: pointer;
+}
+
+ul,
+li {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+}
+
+ul {
+    flex-basis: 50%;
+}
+
+nav img {
+    height: 35px;
+}
+
+nav>div {
+    flex-basis: 8%;
+}
+
+.dropdown-menu.show {
+    display: flex !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: inherit !important;
+    background-color: inherit !important;
+}
+
+.dropdown-divider {
+    background-color: white;
+    height: 1rem !important;
+    width: .5rem !important;
+}
+
+/* --------FOOTER--------- */
+
+.btn-warning {
+    background-color: #ebe660 !important;
+    border-color: #ebe660 !important;
+}
+
+.col>h6 {
+    margin-top: .5rem !important;
+}
+
+.footer-social-item {
+    width: 26px;
+    height: 26px;
+}
+
+.face {
+    background-image: url("https://www.cinemarkhoyts.com.ar/images/res/footer-fb.png");
+}
+
+.insta {
+    background-image: url("https://www.cinemarkhoyts.com.ar/images/res/footer-ins.png");
+}
+
+.tw {
+    background-image: url("https://www.cinemarkhoyts.com.ar/images/res/footer-tw.png");
+}
+
+.in {
+    background-image: url("https://www.cinemarkhoyts.com.ar/images/res/footer-lnk.png");
+}
+
+.tik {
+    background-image: url("https://www.cinemarkhoyts.com.ar/images/res/footer-tkt.png");
+}
+
+/* ---------------MENU DESPLEGABLE------------------ */
+
+.select {
+    position: relative;
+    display: flex;
+    height: 4rem;
+    padding-top: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.letra {
+    font-family: 'Arial Black';
+}
+
+select {
+    border-radius: 8px;
+    width: 20rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    background: black;
+    color: white;
+}
+
+select option {
+    background: rgb(51, 49, 49);
+}
+
+.desplegable {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.select::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background: black;
+    cursor: pointer;
+}
+
+
+/* --------------PELICULAS------------ */
+
+.card {
+    border: none;
+}
+
+.peliculas {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 190px; */
+    gap: 0.5rem;
+    font-size: small;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+}
+
+.titulo {
+    /* margin-left: 190px; */
+    font-size: 30px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-right: 150px; */
+    align-items: center;
+}
+
+.ftopeli {
+    width: 195px;
+    height: 270px;
+}
+
+span {
+    color: red;
+}
+
+.boton_estreno {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.boton_categoria {
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    font-weight: 900;
+    color: rgb(152, 152, 152);
+    background-color: rgb(64, 64, 64);
+    padding: 7px 10px 7px 10px;
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    background-color: black;
+}
+
+
+/* ----------------ESTRENOS------------- */
+
+.title {
+    margin-left: 10%;
+}
+
+.peli1 {
+    width: 12rem;
+}
+
+.card-title {
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.cartelera {
+    margin-left: 120px;
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemark Hoyts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assent/styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
+</head>
+
+<body>
+    <main>
+        <header class="navbar navbar-expand-lg bg-black">
+            <nav class="container-fluid d-flex justify-content-between">
+                <div class="navbar-brand">
+                    <img src="https://www.cinemarkhoyts.com.ar/images/res/logo.png?v=2" alt="cinemark logo" />
+                </div>
+                <ul class="d-flex justify-content-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle fw-bold text-light" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Peliculas
+                        </a>
+                        <div class="dropdown-menu w-100 border-0" style="background-color: #333;">
+                            <a class="dropdown-item fw-bold text-light" href="#">Peliculas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fw-bold text-light" href="#">+Peliculas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fw-bold text-light" href="#">Estrenos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fw-bold text-light" href="#">Candy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link fw-bold text-light">Candy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link fw-bold text-light">Cine Fan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link fw-bold text-light">Regala Cine</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-between ">
+                    <a href=""><img src="https://www.cinemarkhoyts.com.ar/images/res/search-outline.png"
+                            alt="search"></a>
+                    <a href="https://www.cinemarkhoyts.com.ar/nsLogin.aspx?ReturnUrl=https://www.cinemarkhoyts.com.ar/"><img
+                            src="https://www.cinemarkhoyts.com.ar/images/res/user-outline.png" alt="user"></a>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+        <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/CINEFAN.png" class="d-block w-100" alt="CineFan">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/CREED3.png" class="d-block w-100" alt="Creed3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/DAEMONSLAYER.png" class="d-block w-100" alt="Daemonslayer">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ELCASTILLOAMBULANTES.png" class="d-block w-100" alt="ElCastilloAmbulante">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/IMPERIO_DE_LUZ.jfif" class="d-block w-100" alt="ImperioDeLuz">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/PROMOS.png" class="d-block w-100" alt="Promos">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/QUANTUMANIA.png" class="d-block w-100" alt="Quantumania">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+            </div>
+        </div>
+
+
+
+        <div class="desplegable">
+            <div class="select">
+                <label>
+                    <select class="letra" name="cine" id="cine">
+                        <option selected disabled>SELECCIONA UN CINE</option>
+                        <option value="HOYTS ABASTO">HOYTS ABASTO</option>
+                        <option value="CINEMARK AVELLANEDA">CINEMARK AVELLANEDA</option>
+                        <option value="CINEMARK CABALLITO">CINEMARK CABALLITO</option>
+                        <option value="HOYTS DOT">HOYTS DOT</option>
+                        <option value="CINEMARK MALVINAS ARGENTINAS">CINEMARK MALVINAS ARGENTINAS</option>
+                        <option value="CINEMARK MENDOZA">CINEMARK MENDOZA</option>
+                        <option value="HOYTS MORENO">HOYTS MORENO</option>
+                        <option value="HOYTS MORON">HOYTS MORON</option>
+                        <option value="CINEMARK NEUQUEN">CINEMARK NEUQUEN</option>
+                        <option value="HOYTS NUEVOCENTRO">HOYTS NUEVOCENTRO</option>
+                        <option value="CINEMARK PALERMO">CINEMARK PALERMO</option>
+                        <option value="HOYTS PATIO OLMOS">HOYTS PATIO OLMOS</option>
+                        <option value="CINEMARK PUERTO MADERO">CINEMARK PUERTO MADERO</option>
+                        <option value="HOYTS QUILMES">HOYTS QUILMES</option>
+                        <option value="HOYTS ROSARIO">HOYTS ROSARIO</option>
+                        <option value="HOYTS SALTA">HOYTS SALTA</option>
+                        <option value="CINEMARK SALTA">CINEMARK SALTA</option>
+                        <option value="CINEMARK SAN JUSTO">CINEMARK SAN JUSTO</option>
+                        <option value="CINEMARK SANTA FE">CINEMARK SANTA FE</option>
+                        <option value="CINEMARK SOLEIL">CINEMARK SOLEIL</option>
+                        <option value="HOYTS TEMPERLEY">HOYTS TEMPERLEY</option>
+                        <option value="CINEMARK TORTUGAS">CINEMARK TORTUGAS</option>
+                        <option value="HOYTS UNICENTER">HOYTS UNICENTER</option>
+                    </select>
+                </label>
+            </div>
+            <div class="select">
+                <label>
+                    <select class="letra" name="pelicula" id="pelicula">
+                        <option selected disabled>SELECCIONA UNA PELICULA</option>
+                        <option value="ALERTA EXTREMA">ALERTA EXTREMA</option>
+                        <option value="ANT MAN QUANTUMANIA">ANT MAN QUANTUMANIA</option>
+                        <option value="AVATAR EL CAMINO DEL AGUA">AVATAR EL CAMINO DEL AGUA</option>
+                        <option value="BABYLON">BABYLON</option>
+                        <option value="CARBON">CARBON</option>
+                        <option value="CREED 3">CREED 3</option>
+                        <option value="DEMON SLAYER TO THE SWORDSMITH VILLAGE">DEMON SLAYER TO THE SWORDSMITH VILLAGE
+                        </option>
+                        <option value="EL ARO 4">EL ARO 4</option>
+                        <option value="EL CASTILLO AMBULANTE">EL CASTILLO AMBULANTE</option>
+                        <option value="GATO CON BOTAS EL ULTIMO DESEO">GATO CON BOTAS EL ULTIMO DESEO</option>
+                        <option value="IMPERIO DE LUZ">IMPERIO DE LUZ</option>
+                        <option value="LA RESIDENCIA">LA RESIDENCIA</option>
+                        <option value="LAS MOMIAS Y EL ANILLO PERDIDO">LAS MOMIAS Y EL ANILLO PERDIDO</option>
+                        <option value="LLAMAN A LA PUERTA">LLAMAN A LA PUERTA</option>
+                        <option value="LOS ESPIRITUS DE LA ISLA">LOS ESPIRITUS DE LA ISLA</option>
+                        <option value="LOS FABELMAN">LOS FABELMAN</option>
+                        <option value="LOUIS TOMLISON">LOUIS TOMLISON</option>
+                        <option value="M3GAN">M3GAN</option>
+                        <option value="MADRE VEN">MADRE VEN</option>
+                        <option value="MI VECINO TOTORO">MI VECINO TOTORO</option>
+                        <option value="OFRENDA AL DEMONIO">OFRENDA AL DEMONIO</option>
+                        <option value="ROJO PROFUNDO">ROJO PROFUNDO</option>
+                        <option value="TAR">TAR</option>
+                        <option value="TITANIC 25 ANIVERSARIO">TITANIC 25 ANIVERSARIO</option>
+                        <option value="TODO EN TODAS PARTES AL MISMO TIEMPO">TODO EN TODAS PARTES AL MISMO TIEMPO
+                        </option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="cartelera">
+            <section class="titulo">
+                <p>PELICULAS</p>
+                <a href="#" class="boton_categoria">PELICULAS POR CATEGORIA</a>
+            </section>
+            <section class="peliculas">
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/1peli.jpg" class="card-img-top ftopeli" alt="alerta_estrema">
+                        <div class="card-body">
+                            <p class="card-text">ALERTA EXTREMA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/2peli.jpg" class="card-img-top ftopeli" alt="antman">
+                        <div class="card-body">
+                            <p class="card-text">ANT MAN QUANTUMANIA</p>
+                            <a href="#" class="boton_estreno">ESTRENO</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/3peli.jpg" class="card-img-top ftopeli" alt="avatar">
+                        <div class="card-body">
+                            <p class="card-text">AVATAR EL CAMINO DEL AGUA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/4peli.jpg" class="card-img-top ftopeli" alt="babylon">
+                        <div class="card-body">
+                            <p class="card-text">BABYLON</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/5peli.jpg" class="card-img-top ftopeli" alt="carbon">
+                        <div class="card-body">
+                            <p class="card-text">CARBON<br><span>VENTA ANTICIPADA</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/6peli.jpg" class="card-img-top ftopeli" alt="CREED_3">
+                        <div class="card-body">
+                            <p class="card-text">CREED III<br><span>VENTA ANTICIPADA</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="peliculas">
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/7peli.jpg" class="card-img-top ftopeli" alt="demon_slayer">
+                        <div class="card-body">
+                            <p class="card-text">DEMON SLAYER TO THE SWORDSMITH VILLAGE<br>
+                                <span>CONTENIDO ALTERNATIVO VENTA ANTICIPADA</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/8peli.jpg" class="card-img-top ftopeli" alt="el_aro4">
+                        <div class="card-body">
+                            <p class="card-text">EL ARO 4</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/9peli.jpg" class="card-img-top ftopeli" alt="castillo_ambulante">
+                        <div class="card-body">
+                            <p class="card-text">EL CASTILLO AMBULANTE<br><span>VENTA ANTICIPADA</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/10peli.jpg" class="card-img-top ftopeli" alt="gato_conbotas">
+                        <div class="card-body">
+                            <p class="card-text">GATO CON BOTAS EL ULTIMO DESEO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/11peli.jpg" class="card-img-top ftopeli" alt="imperio_deluz">
+                        <div class="card-body">
+                            <p class="card-text">IMPERIO DE LUZ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="./img/12peli.jpg" class="card-img-top ftopeli" alt="la_residencia">
+                        <div class="card-body">
+                            <p class="card-text">LA RESIDENCIA<br><span>VENTA ANTICIPADA</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="titulo text-grey fs-2 fw-light mb-3 bg-black  ">PRÓXIMAMENTE</section>
+            <section class="peliculas">
+                <div class="proximamente d-flex flex-wrap column-gap-2 bg-black">
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/897.jpg?v=00001557"
+                            alt="carbon" class="img-fluid">
+                        <p class="card-title d-flex">CARBÓN</p>
+                        <p class="card-detail bg-white text-black fw-bold">23/02/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/894.jpg?v=00001557"
+                            alt="elCastilloAmbulante" class="img-fluid">
+                        <p class="card-title d-flex">EL CASTILLO AMBULANTE</p>
+                        <p class="card-detail bg-white text-black fw-bold">23/02/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/869.jpg?v=00001557"
+                            alt="imperioDeLuz" class="img-fluid">
+                        <p class="card-title d-flex">IMPERIO DE LUZ</p>
+                        <p class="card-detail bg-white text-black fw-bold">23/02/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/892.jpg?v=00001557"
+                            alt="laResidencia" class="img-fluid">
+                        <p class="card-title d-flex">LA RESIDENCIA</p>
+                        <p class="card-detail bg-white text-black fw-bold">23/02/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/826.jpg?v=00001557"
+                            alt="lasMomias" class="img-fluid">
+                        <p class="card-title d-flex">LAS MOMIAS Y EL IMPERIO PERDIDO</p>
+                        <p class="card-detail bg-white text-black fw-bold">23/02/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/843.jpg?v=00001557"
+                            alt="ofrendaDemonio" class="img-fluid">
+                        <p class="card-title d-flex">OFRENDA AL DEMONIO</p>
+                        <p class="card-detail bg-white text-black fw-bold">23/02/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/901.jpg?v=00001557"
+                            alt="comoComplacer" class="img-fluid">
+                        <p class="card-title d-flex">COMO COMPLACER A UNA MUJER</p>
+                        <p class="card-detail bg-white text-black fw-bold">02/03/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/829.jpg?v=00001557"
+                            alt="creed" class="img-fluid">
+                        <p class="card-title d-flex">CREED III</p>
+                        <p class="card-detail bg-white text-black fw-bold">02/03/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/899.jpg?v=00001557"
+                            alt="desconectada" class="img-fluid">
+                        <p class="card-title d-flex">DESCONECTADA</p>
+                        <p class="card-detail bg-white text-black fw-bold">02/03/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/844.jpg?v=00001557"
+                            alt="ellasHablan" class="img-fluid">
+                        <p class="card-title d-flex">ELLAS HABLAN</p>
+                        <p class="card-detail bg-white text-black fw-bold">02/03/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/880.jpg?v=00001557"
+                            alt="laBallena" class="img-fluid">
+                        <p class="card-title d-flex">LA BALLENA (THE WHALE)</p>
+                        <p class="card-detail bg-white text-black fw-bold">02/03/23</p>
+                    </div>
+
+                    <div class="peli1 text-white text-center">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ComingSoon/200x285/884.jpg?v=00001557"
+                            alt="maldicionNovia" class="img-fluid">
+                        <p class="card-title d-flex">LA MALDICION DE LA NOVIA</p>
+                        <p class="card-detail bg-white text-black fw-bold">02/03/23</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer style="background-color: #333;">
+            <div class="container-fluid row mx-0 row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 text-white">
+                <div class="col">
+                    <img src="https://www.cinemarkhoyts.com.ar/images/res/footer-logo.png" alt="logo">
+                    <div class="d-flex justify-content-between mt-3">
+                        <a href="#" class="nav-link">
+                            <div class="face footer-social-item"></div>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <div class="insta footer-social-item"></div>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <div class="tw footer-social-item"></div>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <div class="in footer-social-item"></div>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <div class="tik footer-social-item"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h6><strong>Cartelera</strong></h6>
+                    <ul>
+                        <li><a href="#" class="nav-link">Estrenos</a></li>
+                        <li><a href="#" class="nav-link">ventas anticipadas</a></li>
+                        <li><a href="#" class="nav-link">Peliculas 2D</a></li>
+                        <li><a href="#" class="nav-link">Peliculas 3D</a></li>
+                        <li><a href="#" class="nav-link">Peliculas 4D</a></li>
+                        <li><a href="#" class="nav-link">Peliculas XD</a></li>
+                        <li><a href="#" class="nav-link">Peliculas DBOX</a></li>
+                        <li><a href="#" class="nav-link">Premium Class</a></li>
+                        <li><a href="#" class="nav-link">Comfort </a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6><strong>Premium Class</strong></h6>
+                    <ul>
+                        <li><a href="#" class="nav-link">Cartelera</a></li>
+                    </ul>
+                    <h6><strong>Cinemark Lounge</strong></h6>
+                    <ul>
+                        <li><a href="#" class="nav-link">Cartelera</a></li>
+                    </ul>
+                    <h6><strong>Cine Fan</strong></h6>
+                    <ul>
+                        <li><a href="#" class="nav-link">Concursos</a></li>
+                        <li><a href="#" class="nav-link">Contacto Cine Fan</a></li>
+                        <li><a href="#" class="nav-link">Base Programa de beneficios cine fan</a></li>
+                    </ul>
+                    <h6><strong>Candy </strong></h6>
+                    <ul>
+                        <li><a href="#" class="nav-link">Todos los productos</a></li>
+                        <li><a href="#" class="nav-link">Bases venta candy online</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6><strong>Cines</strong></h6>
+                    <ul>
+                        <li><a href="#" class="nav-link">Cines / Precios</a></li>
+                        <li><a href="#" class="nav-link">Formatos</a></li>
+                        <li><a href="#" class="nav-link">informacion General</a></li>
+                        <li><a href="#" class="nav-link">Promociones </a></li>
+                        <li><a href="#" class="nav-link">Cumpleaños & grupos </a></li>
+                        <li><a href="#" class="nav-link">Bases venta entradas online </a></li>
+                    </ul>
+                    <h6><strong>Regala cine</strong></h6>
+                    <ul>
+                        <li><a href="#" class="nav-link">Experiencias</a></li>
+                        <li><a href="#" class="nav-link">Formatos</a></li>
+                        <li><a href="#" class="nav-link">Bases programa regala cine</a></li>
+                    </ul>
+                    <h6><strong>Comercial</strong></h6>
+                    <ul>
+                        <li><a href="#" class="nav-link">Ventas corporativas</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="d-flex gap-4">
+                        <img src="https://www.cinemarkhoyts.com.ar/images/res/data-fiscal.png" alt="data-fiscal">
+                        <img src="https://www.cinemarkhoyts.com.ar/images/res/data-fiscal.png" alt="data-fiscal">
+                    </div>
+                    <ul>
+                        <li><a href="#" class="nav-link">Contacto</a></li>
+                        <li><a href="#" class="nav-link">RRhh</a></li>
+                        <li><a href="#" class="nav-link">Flix Media</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark d-flex justify-content-between py-3 px-5 align-items-center">
+                <div class=" d-flex text-white w-50">
+                    <span style="text-transform: capitalize;">Dirección General de Defensa y Protección al Consumidor:
+                        Para
+                        consultas y/o denuncias haga
+                        <a class="nav-link d-inline fw-bold" href="#">click aquí</a></span>
+                </div>
+                <div>
+                    <button class="btn btn-warning btn-lg bg-warning-emphasis"
+                        style="text-transform: uppercase; font-weight: bold;">Boton de
+                        arrepentimiento</button>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
